@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+.navigation {
+    padding: 0 5rem 0;
+}
+
+.home {
+    height: 5rem;
+
+}

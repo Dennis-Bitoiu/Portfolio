@@ -24,8 +24,7 @@ h1 {
 h2 a {
     color: white;
     text-decoration: none;
-    margin: 0;
-    padding: 0;
+
 }
 
 h6 {
@@ -51,7 +50,7 @@ h6 {
 
 .navbar-brand {
     color: white;
-    font-family: sans-serif;
+    font-family: 'Lato';
     font-size: 2.4rem;
     font-weight: bolder;
 
@@ -59,8 +58,8 @@ h6 {
 
 .links {
     height: 100%;
-    margin-left: 30rem;
-    font-size: 2.05rem;
+    margin-left: 40%;
+    font-size: 1.9rem;
     color: white;
     padding-top: 5px;
     text-shadow: rgba(119, 0, 254, .5) 1px 0 4px;
@@ -72,40 +71,57 @@ h6 {
 }
 
 .icons-anchor {
-    border: 2px solid;
+    border: 1px solid;
     border-radius: 100%;
-    height: 50%;
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-icon {
     /* width: 100%; */
     color: white;
-    font-size: 1.3rem;
-    padding: 2px 4px;
+    font-size: 1.2rem;
+    padding: 1px 2px;
 }
 
 
 .nav-link.icons-anchor:hover {
-    background: linear-gradient(90deg, rgba(119, 0, 254, 1) 35%, rgba(59, 0, 255, 1) 100%);
-    color: #fff;
+    background: white;
+    color: black;
+    border-color: #fff;
+}
+
+.nav-link.icons-anchor:hover i {
+    color: black;
 }
 
 .nav-link.connect {
     margin-left: 3rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: white;
     border: 1px solid;
-    font-weight: 900;
-    width: 13rem;
+    font-family: 'Lato';
+    letter-spacing: .05rem;
+    font-weight: normal;
+    width: 9.5rem;
     text-align: center;
+    --c: #ffffff;
+    /* the color */
+
+    /* color: #0000; */
+    background:
+        linear-gradient(90deg, #fff 50%, var(--c) 0) calc(100% - var(--_p, 0%))/200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) 100% no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: .4s;
 }
 
 .nav-link.connect:hover {
-    background-color: white;
-    /* transition: background-color 1 ease-in; */
-    color: rgb(153, 5, 239);
+    color: black;
+    --_p: 100%
 }
 
 /* HOME SECTION */
@@ -115,7 +131,7 @@ h6 {
     min-height: 100vh;
     height: 40rem;
     width: 100%;
-    background-image: url("../images/astronaut3.jpg");
+    background-image: url("../images/astronaut1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20rem 6rem 0 6rem;
@@ -133,7 +149,7 @@ h6 {
 .top {
     display: inline-block;
     background: linear-gradient(90deg, rgba(59, 0, 255, 1) 15%, rgb(140, 0, 254) 100%);
-    padding: 1rem 1.5rem;
+    padding: 1.1rem 1rem;
     border: 2px solid white;
     border-radius: 15px;
     font-family: 'Roboto';
@@ -156,10 +172,10 @@ h6 {
 
 .wrapper {
     min-width: 100vh;
-    min-height: 100vh;
+    min-height: 65vh;
     background-image: url("../images/banner-bg.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 30% 40%;
     background-size: cover;
     position: relative;
 }
@@ -168,9 +184,9 @@ h6 {
 .skills-wraper {
     display: inline-block;
     margin: auto;
-    height: 75%;
+    height: 85%;
     width: 90%;
-    background-color: black;
+    background-color: rgb(23, 23, 23);
     position: absolute;
     top: 0;
     left: 0;
@@ -182,17 +198,17 @@ h6 {
 .skills-title {
     color: white;
     text-align: center;
-    margin: 3% 0 0;
+    margin: 2rem 0 0;
 }
 
-.skills-title h1 {
+.skills-title h2 {
     font-weight: 100;
-    margin-bottom: .8%;
+    margin-bottom: 1rem;
 }
 
 /* Skills carousel */
 .carousel {
-    margin-top: 7rem;
+    margin-top: 2rem;
 }
 
 .row {
@@ -214,6 +230,9 @@ h6 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: white;
+    font-family: 'Lato';
+
 }
 
 .box .percent {
@@ -235,20 +254,20 @@ h6 {
     stroke: #000;
     stroke-width: 18;
     transform: translate(5px, 5px);
-    stroke-dasharray: 530;
-    stroke-dashoffset: 530;
+    stroke-dasharray: 596;
+    stroke-dashoffset: 596;
     stroke-linecap: round;
 }
 
 .box .percent svg circle:nth-child(1) {
     stroke-dashoffset: 0;
-    stroke: #f3f3f3;
+    stroke: inherit;
 
 }
 
 .box .percent svg circle:nth-child(2) {
-    stroke-dashoffset: calc(530 - (530 * 87) / 100);
-    stroke: #03a9f4;
+    stroke-dashoffset: calc(560 - (560 * 87) / 100);
+    stroke: rgb(89, 0, 255);
 
 }
 
@@ -261,6 +280,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .box .percent .number h2 {
@@ -272,12 +292,30 @@ h6 {
 }
 
 .box .text {
-    padding: 10px;
-    color: #999;
-    font-weight: 700;
+    padding: 10px 30px 10px;
+    margin-right: .5rem;
     letter-spacing: 1px;
 }
 
 .carousel-indicators {
-    top: 350px;
+    top: 340px;
+    right: 40px;
+}
+
+
+/* PROJECTS SECTION */
+
+.projects-wrapper {
+    background-color: rgb(23, 23, 23);
+    color: white;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5rem 4rem;
+}
+
+.projects-title {
+    font-family: 'Lato';
+    font-size: 2.3rem;
 }

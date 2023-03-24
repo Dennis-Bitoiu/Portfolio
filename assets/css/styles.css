@@ -40,8 +40,7 @@ img {
 
 .fixed-top {
     position: fixed;
-
-    padding: 0 6rem 0;
+    padding: .7rem 6rem .7rem;
 }
 
 /* NAVBAR */
@@ -58,7 +57,7 @@ img {
 .navbar-brand {
     color: white;
     font-family: 'Lato';
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: bolder;
 
 }
@@ -66,9 +65,8 @@ img {
 .links {
     height: 100%;
     margin-left: 40%;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     color: white;
-    padding-top: 5px;
     text-shadow: rgba(119, 0, 254, .5) 1px 0 4px;
 }
 
@@ -383,10 +381,15 @@ img {
     font-family: 'Lato';
 }
 
+.overlay h2 {
+    font-size: 1.5rem;
+}
+
 .overlay a {
     font-size: 2.5rem;
     color: black;
 }
+
 
 /* Contact Section */
 
@@ -455,6 +458,13 @@ form {
 
 .textarea {
     resize: vertical;
+}
+
+.btn {
+    width: 8rem;
+    padding: 16px 2rem;
+    border-radius: .5rem;
+    margin: 2rem 0;
 }
 
 /* Footer */

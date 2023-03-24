@@ -5,3 +5,9 @@ svgsArray.forEach((svg, index) => {
     const percentage = (percentages[index].textContent.substring(0, 3) === '100') ? 99 : percentages[index].textContent.substring(0, 2)
     return svg.lastElementChild.style.strokeDashoffset = 585 - ((585 * percentage) / 100);
 })
+
+const overlays = Array.from(document.querySelectorAll('.overlay'));
+
+overlays.forEach(overlay => overlay.classList.add('fade-top'));
+
+

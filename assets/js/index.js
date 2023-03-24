@@ -11,3 +11,14 @@ const overlays = Array.from(document.querySelectorAll('.overlay'));
 overlays.forEach(overlay => overlay.classList.add('fade-top'));
 
 
+
+window.onscroll = function () {
+    var scrollLimit = 100;
+    if (window.scrollY >= scrollLimit) {
+        $('.navbar').addClass('bg-darkk');
+    } else {
+        $('.navbar').removeClass('bg-darkk');
+
+    }
+    
+};

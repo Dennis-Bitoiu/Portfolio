@@ -33,14 +33,14 @@
 <body>
 
     <!-- NAVIGATION SECTION -->
-    <section class="navigation" id="nav">
-        <nav class="navbar fixed-top navbar-expand-lg bg-transparent">
+    <section class="navigation m-0" id="nav">
+        <nav class="navbar fixed-top navbar-expand-lg">
             <div class="container-fluid ps-0">
                 <a class="navbar-brand" href="#">Dennis</a>
                 <div class="links">
-                    <a class="nav-link" href="#">Home</a>
-                    <a class="nav-link" href="#">Skills</a>
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#projects">Projects</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -48,12 +48,12 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto pt-3">
+                    <div class="navbar-nav ms-auto">
                         <a class="nav-link icons-anchor" href="#"><i class="fa-brands fa-github  contact-icon"></i></a>
                         <a class="nav-link icons-anchor" href="#"><i
                                 class="fa-brands fa-instagram contact-icon"></i></a>
                         <a class="nav-link icons-anchor" href="#"><i class="fa-brands fa-linkedin contact-icon"></i></a>
-                        <a class="nav-link connect" href=""> Let's Connect</a>
+                        <a class="nav-link connect" href="#contact"> Let's Connect</a>
                     </div>
                 </div>
             </div>
@@ -81,6 +81,7 @@
         </div>
     </section>
 
+    <!-- SKILLS SECTION -->
     <section id="skills">
         <div class="wrapper">
             <div class="skills-wraper">
@@ -268,7 +269,7 @@
             </div>
     </section>
 
-
+    <!-- PROJECTS SECTION -->
     <section id="projects">
         <div class="container-fluid projects-wrapper">
             <h1 class="projects-title">Projects</h1>
@@ -318,11 +319,44 @@
     </section>
 
 
+    <!-- CONTACT SECTION -->
     <section id="contact">
         <div class="container-fluid contact-wrapper">
+            <img src="./assets/images/contact-img.svg" alt="">
 
+            <div class="contact-form">
+                <h1 class="p-0 m-0">Get In Touch</h1>
+                <form action="">
+                    <div class="flex py-2 gap-4">
+                        <input type="text" class="form-control form-control-lg input" placeholder="Name">
+                        <input type="text" class="form-control form-control-lg input" placeholder="Last Name">
+                    </div>
+
+                    <div class="flex py-4 gap-4">
+                        <input type="email" class="form-control form-control-lg input" placeholder="Email">
+                        <input type="phone" class="form-control form-control-lg input" placeholder="Phone">
+                    </div>
+
+                    <textarea class="form-control textarea " cols="40" rows="35" placeholder="Message"></textarea>
+
+                </form>
+            </div>
         </div>
+
     </section>
+
+    <!-- FOOTER -->
+    <div class="container-fluid p-0">
+        <div class="flex footer px-5 pt-4 pb-3 ">
+            <h1 class="fs-3 text-light m-0" style="font-family: 'Lato';">Dennis</h1>
+
+            <div class="flex gap-4">
+                <a href="#"><i class="fa-brands fa-github  contact-icon"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram contact-icon"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin contact-icon"></i></a>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>

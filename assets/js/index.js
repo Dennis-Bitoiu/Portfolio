@@ -11,6 +11,13 @@ const overlays = Array.from(document.querySelectorAll('.overlay'));
 overlays.forEach(overlay => overlay.classList.add('fade-top'));
 
 
+// const projectDivs = Array.from($('.project-div'));
+// projectDivs.forEach(project => {
+//     if (project.innerText !== 'Title') {
+//         project.style.background = "url('../images/whisper.png')";
+//     }
+// })
+
 
 window.onscroll = function () {
     var scrollLimit = 100;
